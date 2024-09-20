@@ -1,0 +1,53 @@
+.background-fade {
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 20px; /* makes box bigger */
+    margin: 10px;
+    border-radius: 8px; /*corners round*/
+    text-align: center;
+}
+.shadow-text {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.interactive-btn {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white; /* color changes the text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* this makes the button click*/
+    transition: background-color 0.3s; /* this makes the color change smoothly*/
+}
+.interactive-btn:hover {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+a{
+    color: blue;
+    text-decoration: none;
+    transition: color 0.5s ease; /* smooth transition*/
+
+}
+a:hover {
+    color: red;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+button:active {
+    transform: scale(1.1); /* makes the button bigger when clicked*/
+}
+/*Rotate Icon*/
+@keyframes rotate {
+    from {transform: rotate(0deg);} /* starting positio to rotate*/
+    to {transform: rotate(360deg);} /* rotates full circle*/
+}
+#rotate-icon {
+    width: 300px; /* stes the size for image*/
+    animation: rotate 5s linear infinite; /* keeps rotating with a 5 sec*/
+}
